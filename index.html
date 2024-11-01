@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classy-Text CDN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            background-color: #4c51bf; /* Indigo color */
+            color: white;
+            padding: 2rem;
+        }
+        .box-view{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        h3{
+            padding: 15px;
+            text-align: center;
+            font-size: 30px;
+            
+        }
+        a{
+            text-decoration: underline;
+            color: blue;
+            cursor: pointer;
+        }
+        a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero text-center">
+        <h1 class="text-4xl font-bold">Classy-Text CDN</h1>
+        <p class="mt-4">Dynamic text styling made easy. Transform your web content with unique styles using our CDN!</p>
+    </header>
+<div class="box-view">
+
+    <div class="container mx-auto mt-10 text-center">
+        <h2 class="text-3xl font-semibold text-center underline ">Features</h2>
+        <ul class="mt-4 list-disc list-inside text-2xl">
+            <li>Wide range of styles to choose from</li>
+            <li>Easy to integrate into any project</li>
+            <li>Responsive and lightweight</li>
+        </ul>
+    </div>
+    <div id="desc-box ">
+        <h3>For all available styles  check <a href="https://github.com/DeadpoolX7/Classy-Text" target="_blank">github repo</a></h3>
+    </div>
+    <div class="container mx-auto mt-10">
+        <h2 class="text-3xl font-semibold">How to Use</h2>
+        <p class="mt-4">Simply include the following CDN link in your project head tag:</p>
+        <code class="block bg-gray-300 p-2 rounded font-semibold">
+            &#60script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"&#62;&#60/script&#62; <br>
+            &#60script src="https://cdn.jsdelivr.net/gh/DeadpoolX7/Classy-Text/src/classy-text.js" &#62;&#60/script&#62;</code>
+        <p class="mt-4">Then, apply styles using <code>ct:</code> attributes in your HTML.</p>
+        <p>ex:- &#60h1 ct:*styleName&#62; Hello, world!&#60/h1&#62;</p>
+    </div>
+
+
+
+    
+</div>
+
+    <footer class="text-center mt-10 py-4 bg-gray-200">
+        <p>© 2024 Classy-Text. All rights reserved.</p>
+    </footer>
+</body>
+</html>
